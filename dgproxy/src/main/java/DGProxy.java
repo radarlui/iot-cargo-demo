@@ -38,8 +38,8 @@ public class DGProxy {
     public DGProxy() {
         ConfigurationBuilder builder = new ConfigurationBuilder();
         builder.addServer()
-              .host("localhost")
-              .port(11422);
+              .host("data-grid")
+              .port(11222);
         cacheManager = new RemoteCacheManager(builder.build());
         cache = cacheManager.getCache("default");
     }
